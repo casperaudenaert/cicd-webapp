@@ -31,5 +31,5 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          file: ./Dockerfile
+          file: webapp/Dockerfile
           tags: audenaertcasper/webapp:latest
