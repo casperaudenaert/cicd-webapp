@@ -11,6 +11,9 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
 
+      - name: check workdir
+        run: ls
+        
       - name: Install node JS
         uses: actions/setup-node@v3
         with:
