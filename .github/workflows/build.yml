@@ -29,7 +29,6 @@ jobs:
 
       - name: Docker Image
         uses: docker/build-push-action@v3
-        working-directory: webapp
         with:
           context: .
           file: ./Dockerfile
