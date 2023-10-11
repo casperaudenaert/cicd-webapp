@@ -13,7 +13,7 @@ jobs:
 
       - name: check workdir
         run: ls
-        
+
       - name: Install node JS
         uses: actions/setup-node@v3
         with:
@@ -21,8 +21,8 @@ jobs:
 
       - name: Install Dependencies
         run: yarn install
-        working-directory: /webapp
+        working-directory: webapp
 
       - name: Lint
         run: yarn lint
-        working-directory: /webapp
+        working-directory: webapp
