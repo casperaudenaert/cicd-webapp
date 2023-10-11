@@ -30,6 +30,6 @@ jobs:
       - name: Docker Image
         uses: docker/build-push-action@v3
         with:
-          context: .
-          file: webapp/Dockerfile
+          context: ./webapp
+          file: ./Dockerfile
           tags: audenaertcasper/webapp:latest
